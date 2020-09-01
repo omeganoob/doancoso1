@@ -1,0 +1,39 @@
+<h3>Thông số sản phẩm</h3>
+    <table>
+        <tr>
+            <th>Màn hình: </th>
+            <td>Dynamic AMOLED, 6.8", Quad HD+ (2K+)</td>
+        </tr>
+        <tr>
+            <th>Hệ điều hành: </th>
+            <td>Android 9.0 (Pie)</td>
+        </tr>
+        <tr>
+            <th>CPU: </th>
+            <td>Exynos 9825 8 nhân</td>
+        </tr>
+        <tr>
+            <th>Ram: </th>
+            <td>12 GB</td>
+        </tr>
+        <tr>
+            <th>Rom: </th>
+            <td>256 GB</td>
+        </tr>
+        <tr>
+            <th>Camera: </th>
+            <td>Chính 12 MP & Phụ 12 MP,16 MP</td>
+        </tr>
+        <tr>
+            <th>Thẻ nhớ: </th>
+            <td>MicroSD, tối đa 1 TB</td>
+        </tr>
+        <tr>
+            <th>Sim: </th>
+            <td>2 nano sim, có 4G</td>
+        </tr>
+        <tr>
+            <th>Pin: </th>
+            <td>4300 mAh, Sạc nhanh</td>
+        </tr>
+    </table>

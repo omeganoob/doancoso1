@@ -1,0 +1,26 @@
+@import "header.css";
+
+.contact-form {
+    padding: 1em;
+    background-color: #eee;
+}
+.contact-text {
+    color: #eee;
+    padding: 3em;
+    background-color: var(--green);
+}
+.contact-text h4 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+.contact-text ul {
+    max-width: 70%;
+    list-style: none;
+}
+.contact-text ul li {
+    font-size: 18px;
+}
+.contact-form textarea {
+    width: 100%;
+    resize: none;
+    padding: 1em;
+}

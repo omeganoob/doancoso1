@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taptap.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f3e2743ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        .rating-stars {
+            color: var(--yellow);
+        }
+        .btn-add, .btn-change {
+            margin: 0 .2em;
+            font-size: 18px;
+            font-weight: bold;
+            color: #eee;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+            border: none;
+            padding: 0.5em 2em;
+            background: var(--green);
+        }
+        .btn-change {
+            font-size: 15px;
+            background: var(--yellow);
+        }
+        th,td {
+            border: none !important;
+        }
+        .comment-section textarea {
+            resize: none;
+            width: 100%;
+            height: 150px;
+            padding: 1em;
+        }
+        .comment-section textarea:focus {
+            outline: 3px solid var(--green);
+        }
+        .comment-section input[type="submit"] {
+            padding: .3em 2em;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #eee;
+            background: #0652DD;
+        }
+    </style>
+</head>
+<body>
+    
+    <header style="overflow-x: hidden;">
+        <div class="my-nav">
+            <nav class="container navbar navbar-expand-sm fixed-top">
+                <a class="navbar-brand" href="#">
+                    <h1>TapTap</h1>
+                </a>
+                <form autocomplete="off" class="form-inline" id="searchProduct" action="search-result.php" method="POST">
+                    <div class="auto-hint">
+                        <input id="searchInput" name="product-name" class="form-control mr-sm-2" type="text" placeholder="Tìm gì đó..">
+                    </div>
+                    <input id="btnSearch" class="btn btn-success" type="submit" value="Tìm">
+                </form>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapseNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cartdemo.html">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-history.html">Lịch sử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="large-brand">
+            <div class="row justify-content-around">
+                <div class="col-md-5">
+                    <div class="logo">
+                        <a href="home.html"><img src="logo.png" alt="taptap.com"></a>
+                    </div>
+                </div>
+                <div class="col-md-5" style="position: relative;">
+                    <div class="cart">
+                        <a href="cartdemo.html">Giỏ hàng - <span id="productCount">3</span> Sản phảm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-nav-lg">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartdemo.html">giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hot-product.html">hot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">danh mục</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center mt-3">So sánh sản phẩm</h1>
+        <div class="row my-5 justify-content-around">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4">
+                <div class="compare-img">
+                    <a href="product-detail.php?id=zfmp1">
+                        <img class="fit-img" src="product-img/asus-zenfone-max-pro-m1.jpg" alt="">
+                    </a>
+                </div>
+                <h3 class="text-center mt-2">Zenfone MAX Pro m1</h3>
+                <div class="rating-stars text-center">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="text-center">
+                    <button class="btn-add">Thêm vào giỏ</button>
+                </div>
+                <div class="text-center mt-2">
+                    <button class="btn-change">Thay sản phẩm khác</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="compare-img">
+                    <a href="product-detail.php?id=opoa520">
+                        <img class="fit-img" src="product-img/oppo-a5-2020.png  " alt="">
+                    </a>
+                </div>
+                <h3 class="text-center mt-2">Oppo A5 2020</h3>
+                <div class="rating-stars text-center">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="text-center">
+                    <button class="btn-add">Thêm vào giỏ</button>
+                </div>
+                <div class="text-center mt-2">
+                    <button class="btn-change">Thay sản phẩm khác</button>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="compare-table">
+            <table class="table table-hover">
+                <tr>
+                    <th>Màn hình</th>
+                    <td>IPS LCD, 6", Full HD+</td>
+                    <td>TFT, 6.5", HD+</td>
+                </tr>
+                <tr>
+                    <th>Hệ điều hành</th>
+                    <td>Android 8.1</td>
+                    <td>Android 9.0 (Pie)</td>
+                </tr>
+                <tr>
+                    <th>CPU</th>
+                    <td>Snapdragon 636 8 nhân</td>
+                    <td>Snapdragon 665 8 nhân</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>3 GB</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <th>Bộ nhớ trong</th>
+                    <td>32 GB</td>
+                    <td>128 GB</td>
+                </tr>
+                <tr>
+                    <th>Camera</th>
+                    <td>Chính 13 MP & Phụ 5 MP</td>
+                    <td>Chính 13 MP & Phụ 8 MP,2 MP, 2MP</td>
+                </tr>
+                <tr>
+                    <th>Thẻ nhớ</th>
+                    <td>MicroSD, tối đa 2 TB</td>
+                    <td>MicroSD, tối đa 256 GB</td>
+                </tr>
+                <tr>
+                    <th>Sim</th>
+                    <td>2 nano sim, có 4G</td>
+                    <td>2 nano sim, có 4G</td>
+                </tr>
+                <tr>
+                    <th>Pin</th>
+                    <td>5000 mAh, Sạc nhanh</td>
+                    <td>5000 mAh</td>
+                </tr>
+            </table>
+        </div>
+        <hr class="my-5">
+        <div class="comment-section">
+            <h3>Hỏi đáp, bình luận</h3>
+            <form action="">
+                <textarea name="question" id="question" placeholder="mời bạn để lại bình luận hoặc câu hỏi"></textarea>
+                <div class="form-group">
+                    <input type="submit" value="Gửi">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="mt-5 p-4">
+        <section class="row">
+            <div class="col-sm-3">
+                <p class="font-weight-bold" style="color: #fff;">
+                    Taptap.com
+                </p>
+                <p>
+                    TapTap.com là nhà phân phối lẻ các sản phẩm smartphone chính hãng, giá rẻ và ưu đãi đến người dùng. Chúng tôi luôn ưu tiên trải nghiểm của khách hàng lên hàng đầu. Mọi thắc mắc xin liên hệ chúng tôi qua email <a class="font-weight-bold" href="mailto:taptapstore@gmail.com.vn">taptapstore@gmail.com.vn</a> <br>
+                    Chúc các bản có trải nghiệm tốt!
+                </p>
+                <div class="social-contact">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p class="bold">Tìm cửa hàng</p>
+                <p><a href="#">Hà Nội</a></p>
+                <p><a href="#">Đà Nẵng</a></p>
+                <p><a href="#">Tp. Hồ Chí Minh</a></p>
+                <p><a href="#">Mua Hàng Từ Xa</a></p>
+                <div class="pay-method">
+                    <p>Phương thức thanh toán</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-atm.jpg" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/metheod-momo.png" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-visa.jpg" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-paypal.png" alt="atm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Gọi mua hàng: <span class="font-weight-bold text-danger">987654321</span> (8h00 - 22h00) </p>
+                <p>Gọi khiếu nại: <span class="font-weight-bold text-danger">987654321</span> (8h00 - 21h00) </p>
+                <p>Gọi bảo hành: <span class="font-weight-bold text-danger">987654321</span> (8h00-22h00) </p>
+                <div class="contact-form">
+                    <p>Đăng ký nhận tin khuyến mại</p>
+                    <form action="#" class="form-inline">
+                        <input class="input-group" type="email" placeholder="Email">
+                        <input class="btn-primary" type="submit" value="Đăng ký">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <a href="#">Mua hàng online</a>
+                </p>
+                <p><a href="#">Mua trả góp</a></p>
+                <p><a href="#">Tra thông tin bảo hành</a></p>
+                <p><a href="#">Chính sách sử dụng</a></p>
+                <p><a href="#">Chính sách bảo hành</a></p>
+            </div>
+        </section>
+    </footer>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!--Script-->
+    <script src="script/hint.js"></script>
+</body>
+</html>

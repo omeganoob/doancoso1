@@ -1,0 +1,32 @@
+@import 'header.css';
+
+.checkform {
+    max-width: 60%;
+}
+.checkform label {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+.payment-fill {
+    display: none;
+}
+.check-btn {
+    border: 2px solid #111;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--green);
+    background-color: #fff;
+    padding: .5em 2em;
+    transition: .3s;
+}
+.check-btn:hover {
+    background: var(--green);
+    color: #fff;
+}
+.check-btn:active {
+    transform: scale(.9);
+}
+.pay-info .icon {
+    font-size: 24px;
+}

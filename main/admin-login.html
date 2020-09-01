@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapTap Administator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f3e2743ef.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+body {
+  background-color: #EEE;
+}
+.clear {
+  clear: both;
+}
+.log {
+  width: 400px;
+  margin: 5% auto;
+  background-color: #FFF;
+  padding: 30px 0;
+}
+.log h2 {
+  text-align: center;
+  color: #1dd1a1;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+.log .input-cont {
+  position: relative;
+  margin: 0 50px 60px;
+}
+.log .input-cont:last-of-type {
+  margin-bottom: 30px;
+}
+.log .input-cont input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  color: #212121;
+  font-size: 22px;
+  font-weight: 400;
+  background: none;
+  border: none;
+}
+.log .input-cont input:focus {
+  outline: none;
+}
+.log .input-cont label {
+  position: absolute;
+  color: #948c8c;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+    -o-transition: .3s;
+       transition: .3s;
+}
+.log .input-cont input:focus + label {
+  margin-top: -30px;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+  color: #bdbdbd;
+}
+.log .border1,
+.log .border2 {
+  position: absolute;
+  height: 1px;
+  background-color: #9E9E9E;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.log .border1::after,
+.log .border1::before,
+.log .border2::after,
+.log .border2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+    -o-transition: .5s;
+       transition: .5s;
+}
+.log .border1::after,
+.log .border2::after {
+  
+  right: 50%;
+  background-color: #1dd1a1;
+}
+.log .border1::before,
+.log .border2::before {
+  left: 50%;
+  background-color: #1dd1a1;
+}
+.log .input-cont input:focus ~ .border1::after,
+.log .input-cont input:focus ~ .border1::before,
+.log .input-cont input:focus ~ .border2::after,
+.log .input-cont input:focus ~ .border2::before {
+  width: 50%;
+}
+.log .check,
+.log a {
+  float: left;
+  width: calc(50% - 50px);
+  display: block;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.log .check {
+  margin-left: 50px;
+}
+.log a {
+  text-align: right;
+  text-decoration: none;
+  color: #1dd1a1;
+}
+.log a:hover {
+  text-decoration: underline;
+  color: #1dd1a1;
+}
+.log form #go {
+  display: block;
+  margin: 0 auto 20px;
+  border: 2px solid transparent; 
+  padding: 5px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #1dd1a1;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+    -o-transition: .5s;
+       transition: .5s;
+}
+.log form input[type="submit"]:focus {
+  outline: none; 
+}
+.log form input[type="submit"]:hover {
+  border: 2px solid #1dd1a1;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="log">
+            <h2>Quản trị viên</h2>
+            <form>
+              <div class="input-cont">
+                <input id="id" type="text" placeholder="Tài khoản" required>
+                <div class="border1"></div>
+              </div>
+              <div class="input-cont">
+                <input id="pass" type="password" placeholder="Mật khẩu" required>
+                <div class="border2"></div>
+              </div>
+              <p class="text-danger small text-center" id="wrong"></p>
+              <a href="#">Quên mật khẩu</a>
+              <div class="clear"></div>
+              <button onclick="login()" type="reset" id="go">Đăng nhập</button> 
+            </form>
+        </div>
+    </main>
+    <script>
+        function login() {
+            id = document.getElementById("id").value;
+            correct_id = "admin";
+            pass = document.getElementById("pass").value;
+            correct_pass = "123456";
+            if(id == correct_id && pass == correct_pass) {
+                window.location = "admin.html";
+            } else {
+                document.getElementById("wrong").innerHTML = "Sai thông tin đăng nhập!"
+            }
+        }
+    </script>
+</body>
+</html>

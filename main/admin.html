@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapTap Adminstrator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="https://kit.fontawesome.com/6f3e2743ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header class="overview">
+        <div class="top-bar d-flex">
+            <div>
+                <h3>TapTap Administrator</h3>
+                <h6 id="date"></h6>
+                <script>
+                    y = (new Date()).getFullYear();
+                    m = (new Date()).getMonth()+1;
+                    d = (new Date()).getDate();
+                    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+                </script>
+            </div>
+            <div class="ml-auto admin-logout d-flex">
+                <a href="admin-login.html"><i class="fas fa-sign-out-alt" ></i></a>
+            </div>
+        </div>
+        <div class="row px-5">
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-primary text-white mb-4">
+                    <div class="card-body">
+                        <h5><span><i class="fas fa-funnel-dollar"></i></span> Doanh thu tháng</h5>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <h4>110.000.000 đồng</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link mr-2" href="admin.html">Xem</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-warning text-white mb-4">
+                    <div class="card-body">
+                        <h5><span><i class="fas fa-shopping-bag"></i></span> Đã bán</h5>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <h4>54 sản phẩm</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link mr-2" href="admin-product-sold.html">Xem</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-danger text-white mb-4">
+                    <div class="card-body">
+                        <h5><span><i class="fas fa-scroll"></i></span> Đơn hàng <span  class="small">(Chưa xử lý)</span></h5>
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <h4>12 đơn</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link mr-2" href="order.html">Xem</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card bg-success text-white mb-4">
+                    <div class="card-body">Tài khoản</div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <h4>54 khách hàng</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link mr-2" href="admin-useraccount.html">Xem</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="sticknav">
+        <a class="active" href="#">Nhà</a>
+        <a href="productstock.html">kho sản phẩm</a>
+        <a href="order.html">Đơn hàng</a>
+        <a href="admin-useraccount.html">Tài khoản</a>
+    </nav>
+
+    <main>
+        <div class="container mt-4">
+            <h1 id="month" class="text-center text-danger"></h1>
+            <script>
+                document.getElementById("month").innerHTML = "Hoạt động tháng " + (new Date()).getMonth();
+            </script>
+            <div class="selling-chart">
+                <h3 class="text-center">Doanh thu</h3>
+                <canvas id="sellChart"></canvas>
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-center">Doanh số</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="productChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="text-center">Khách hàng mới</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="myTable">
+                                <table class="table table-bordered" id="userTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Tên</th>
+                                            <th>Điện thoại</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Tên</th>
+                                            <th>Điện thoại</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function() {sticky()};
+        var navbar = document.getElementById("sticknav");
+        var stick = navbar.offsetTop;
+
+        function sticky() {
+            if(window.pageYOffset >= stick) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src="script/smooth-scroll.js"></script>
+    <script src="script/tabledata.js"></script>
+    <script src="script/sellchart.js"></script>
+    <script src="script/productchart.js"></script>
+</body>
+</html>

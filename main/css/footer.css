@@ -1,0 +1,38 @@
+footer {
+    background-color: var(--green);
+}
+footer a {
+    color: #000;
+}
+.bold {
+    font-weight: bold;
+}
+.pay-method-icon {  
+    border: 1px solid #aaa;
+    height: 35px;
+}
+.social-contact ul {
+    list-style: none;
+    display: flex;
+}
+.social-contact ul li {
+    margin: auto;
+    transition: .2s;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+    line-height: 50px;
+}
+.social-contact ul li a {
+    color: #fff;
+    padding: .5em;
+    font-size: 20px;
+    transition: .2s;
+}
+.social-contact ul li:hover {
+    background-color: #fff;
+}
+.social-contact ul li:hover a {
+    color: var(--green);
+}

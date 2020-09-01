@@ -1,0 +1,35 @@
+<h3>Thông số sản phẩm</h3>
+    <table>
+        <tr>
+            <th>Màn hình: </th>
+            <td>OLED, 5.8", Super Retina XDR</td>
+        </tr>
+        <tr>
+            <th>Hệ điều hành: </th>
+            <td>iOS 13</td>
+        </tr>
+        <tr>
+            <th>CPU: </th>
+            <td>Apple A13 Bionic 6 nhân</td>
+        </tr>
+        <tr>
+            <th>Ram: </th>
+            <td>4 GB</td>
+        </tr>
+        <tr>
+            <th>Rom: </th>
+            <td>64 GB</td>
+        </tr>
+        <tr>
+            <th>Camera: </th>
+            <td>3 camera 12 MP</td>
+        </tr>
+        <tr>
+            <th>Sim: </th>
+            <td>1 nano sim & 1 esim, có 4G</td>
+        </tr>
+        <tr>
+            <th>Pin: </th>
+            <td>3046 mAh, Sạc nhanh</td>
+        </tr>
+    </table>

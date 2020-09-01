@@ -1,0 +1,39 @@
+<h3>Thông số sản phẩm</h3>
+    <table>
+        <tr>
+            <th>Màn hình: </th>
+            <td>LTPS LCD, 6.3", Full HD+</td>
+        </tr>
+        <tr>
+            <th>Hệ điều hành: </th>
+            <td>Android 8.1 (Oreo)</td>
+        </tr>
+        <tr>
+            <th>CPU: </th>
+            <td>Kirin 710</td>
+        </tr>
+        <tr>
+            <th>Ram: </th>
+            <td>4 GB</td>
+        </tr>
+        <tr>
+            <th>Rom: </th>
+            <td>128 GB</td>
+        </tr>
+        <tr>
+            <th>Camera: </th>
+            <td>Chính 16 MP & Phụ 2 MP</td>
+        </tr>
+        <tr>
+            <th>Thẻ nhớ: </th>
+            <td>MicroSD, tối đa 256 GB</td>
+        </tr>
+        <tr>
+            <th>Sim: </th>
+            <td>2 nano sim, có 4G</td>
+        </tr>
+        <tr>
+            <th>Pin: </th>
+            <td>3340 mAh</td>
+        </tr>
+    </table>

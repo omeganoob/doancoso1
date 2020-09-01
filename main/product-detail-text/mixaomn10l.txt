@@ -1,0 +1,39 @@
+<h3>Thông số sản phẩm</h3>
+    <table>
+        <tr>
+            <th>Màn hình: </th>
+            <td>AMOLED, 6.47", Full HD+</td>
+        </tr>
+        <tr>
+            <th>Hệ điều hành: </th>
+            <td>Android 10</td>
+        </tr>
+        <tr>
+            <th>CPU: </th>
+            <td>Snapdragon 730G 8 nhân</td>
+        </tr>
+        <tr>
+            <th>Ram: </th>
+            <td>8 GB</td>
+        </tr>
+        <tr>
+            <th>Rom: </th>
+            <td>128 GB</td>
+        </tr>
+        <tr>
+            <th>Camera: </th>
+            <td>Chính 64 MP & Phụ 8 MP, 5 MP, 2 MP</td>
+        </tr>
+        <tr>
+            <th>Thẻ nhớ: </th>
+            <td>MicroSD, tối đa 256 GB</td>
+        </tr>
+        <tr>
+            <th>Sim: </th>
+            <td>2 nano sim, có 4G</td>
+        </tr>
+        <tr>
+            <th>Pin: </th>
+            <td>5260 mAh, Sạc nhanh</td>
+        </tr>
+    </table>

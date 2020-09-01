@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taptap.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f3e2743ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hot1.css">
+</head>
+<body>
+    
+    <header style="overflow-x: hidden;">
+        <div class="my-nav">
+            <nav class="container navbar navbar-expand-sm fixed-top">
+                <a class="navbar-brand" href="#">
+                    <h1>TapTap</h1>
+                </a>
+                <form autocomplete="off" class="form-inline" id="searchProduct" action="search-result.php" method="POST">
+                    <div class="auto-hint">
+                        <input id="searchInput" name="product-name" class="form-control mr-sm-2" type="text" placeholder="Tìm gì đó..">
+                    </div>
+                    <input id="btnSearch" class="btn btn-success" type="submit" value="Tìm">
+                </form>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapseNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cartdemo.html">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-history.html">Lịch sử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="large-brand">
+            <div class="row justify-content-around">
+                <div class="col-md-5">
+                    <div class="logo">
+                        <a href="home.html"><img src="logo.png" alt="taptap.com"></a>
+                    </div>
+                </div>
+                <div class="col-md-5" style="position: relative;">
+                    <div class="cart">
+                        <a href="cartdemo.html">Giỏ hàng - <span id="productCount">3</span> Sản phảm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-nav-lg">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.php">giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hot-product.html">hot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">danh mục</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="space"></div>
+        <h1 class="text-white text-center">Asus Zenfone MAX Pro M1</h1>
+        <h3 class="text-white text-center">Hiệu năng vô địch</h3>
+        <h1 class="hot-price">5.900.000</h1>
+        <div class="text-center my-4">
+            <button class="trans-btn" onclick="window.open('cartdemo.html')">Mua ngay</button>
+            <button class="trans-btn" onclick="window.open('product-detail.php?id=zfmp1')">Trang sản phẩm</button>
+        </div>
+        <div class="img-cont mt-5">
+            <img class="fit-img" src="product-img/product_1.jpg" alt="">
+        </div>
+        <div class="container content-layout">
+            <div class="space-sm"></div>
+            <div class=content-cont>
+                <div class="row my-4">
+                    <div class="col-sm-3 text-center">
+                        <h3 class="bold">2X Hiệu năng</h4>
+                        <p class="h4">2.71x nhanh hơn với
+                            Snapdragon™ 6361 14nm</p>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <h3 class="bold">Pin 2 ngày</h4>
+                        <p class="h4">5000mAh cho 2 ngày sử dụng không ngừng</p>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <h3 class="bold">Camera Kép</h4>
+                        <p class="h4">Cho những bức ảnh hoàn hảo</p>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                        <h3 class="bold">2X sôi động</h4>
+                        <p class="h4">Với công nghệ âm thanh MaxBox</p>
+                    </div>
+                </div>
+                <div class="txt-cont">
+                    <p class="head-3">
+                        ZenFone Max Pro (M1) là điện thoại thông minh thế hệ tiếp theo với nền tảng Snapdragon 636 cung cấp hiệu suất và độ bền phi thường sẽ đưa bạn tiến xa hơn những gì bạn nghĩ có thể. Với màn hình Full View 6 ”Full HD + (2160x1080) 18: 9 tuyệt đẹp, pin 5000mAh siêu bền, hệ thống camera kép và âm thanh tuyệt vời, ZenFone Max Pro có tất cả sức chịu đựng và sức mạnh bạn cần để phù hợp với nhu cầu của mình cách sống. ZenFone Max Pro là người bạn đồng hành bền bỉ của bạn, luôn sẵn sàng ghi lại mọi khoảnh khắc đặc biệt.
+                    </p>
+                </div>
+                <div class="space"></div>
+                <div class="txt-cont">
+                    <p class="head-1 text-center h3">
+                        <span><i class="fas fa-tachometer-alt"></i></span> Hiệu năng
+                    </p>
+                    <h1 class="head-2 text-center">Hiệu suất di động tiên tiến octa-core 14nm</h1>
+                    <p class="head-3">
+                        Trung tâm của ZenFone Max Pro là Nền tảng di động Qualcomm® Snapdragon ™ 636 tiên tiến, kết hợp hiệu năng mượt mà, nhạy bén với tuổi thọ pin vượt trội. Bộ vi xử lý này nhanh hơn 1,54 lần so với người tiền nhiệm của nó, Snapdragon 625.3 Dù bạn đang làm gì, ZenFone Max Pro đều có thể xử lý nó một cách dễ dàng, với hiệu suất luôn ở mức cao.
+                    </p>
+                    <div class="space-sm"></div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h1 class="head-bg">
+                                <span class="small">SDM</span><span class="big">636</span>
+                            </h1>
+                            <p class="head-3 p-0">Qualcomm® Snapdragon ™ 14nm
+                                Nền tảng di động 636</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="big">1.54</span><span class="small">x</span></h1>
+                            <p class="head-3 p-0">Cải thiện hiệu suất CPU
+                                trên SDM6253</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="big">2.71</span><span class="small">x</span></h1>
+                            <p class="head-3 p-0">Cải thiện hiệu suất CPU
+                                trên ZenFone 4 Max Pro</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="big">6</span><span class="small">GB</span></h1>
+                            <p class="head-3 p-0">Lên tới 6GB RAM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+                <div class="txt-cont">
+                    <p class="head-1 text-center h3">
+                        <span><i class="fas fa-battery-three-quarters"></i></span> Pin
+                    </p>
+                    <h1 class="text-center head-2">Sức chịu đựng lớn</h1>
+                    <p class="head-3">
+                        Bên trong vẻ ngoài bóng bẩy của ZenFone Max Pro là một nguồn dự trữ dồi dào: pin lithium-polymer 5000mAh mạnh mẽ được chế tạo riêng để mang lại hiệu suất tối đa trong không gian tối thiểu. Với rất nhiều năng lượng khi nhấn, bạn có thể duyệt nhiều hơn, chơi game nhiều hơn, phát trực tuyến nhiều hơn - và nói nhiều như bạn muốn mà không cần lo lắng về việc tìm ổ cắm điện.
+                    </p>
+                    <div class="space-sm"></div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">5000</span><span class="small">mAh</span></h1>
+                            <p class="head-3 p-0">Pin dung lượng cao</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">35</span><span class="small">Ngày</span></h1>
+                            <p class="head-3 p-0">Lên đến 35 ngày
+                                4G ở chế độ chờ</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">12</span><span class="small">giờ</span></h1>
+                            <p class="head-3 p-0">Lên tới 12 giờ chơi game</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">20</span><span class="small">giờ</span></h1>
+                            <p class="head-3 p-0">Lên đến 20 giờ
+                                Phát lại trên YouTube</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">42</span><span class="small">giờ</span></h1>
+                            <p class="head-3 p-0">Lên đến 42 đàm thoại 3G</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">28</span><span class="small">giờ</span></h1>
+                            <p class="head-3 p-0">Lên đến 28 giờ
+                                Duyệt web Wi-Fi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+                <div class="txt-cont">
+                    <p class="head-1 text-center h3">
+                        <span><i class="fas fa-mobile-alt"></i></span> Hiển thị
+                    </p>
+                    <h1 class="text-center head-2">Toàn màn hình</h1>
+                    <p class="head-3">Đắm chìm trong trải nghiệm hình ảnh sống động của ZenFone Max Pro, với màn hình Full View mở rộng cho phép bạn xem nhiều hơn và nhìn rõ hơn. ZenFone Max Pro giúp ảnh, video hoặc bất kỳ loại nội dung nào trông đẹp hơn so với những gì chúng từng trông thấy trước đây. Với ZenFone Max Pro, mọi thứ đều rõ ràng hơn, sáng hơn và lớn hơn!</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">6"</span></h1>
+                            <p class="head-3 p-0">Hiển thị trong thân máy 5,5 inch</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">Full HD +</span></h1>
+                            <p class="head-3 p-0">Độ phân giải 2160x1080</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">18</span><span class="small">:</span><span class="big">9</span></h1>
+                            <p class="head-3 p-0">Tỉ lệ màn hình</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">450</span><span class="small">nits</span></h1>
+                            <p class="head-3 p-0">Độ sáng</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">1500</span><span class="small">:</span><span class="big">1</span></h1>
+                            <p class="head-3 p-0">Độ tương phản</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="head-bg"><span class="big">85</span><span class="small">%</span></h1>
+                            <p class="head-3 p-0">NTSC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+                <div class="txt-cont">
+                    <p class="head-1 text-center h3">
+                        <span><i class="fab fa-sketch"></i></span> Thiết kế
+                    </p>
+                    <h1 class="text-center head-2">180g kim loại, ít khối lượng hơn</h1>
+                    <p class="head-3">ZenFone Max Pro được chế tạo để tồn tại lâu bền bằng kim loại nguyên khối, với thân máy mỏng và nhẹ được gia công chính xác để mang lại cảm giác sang trọng mà không cồng kềnh. Để mở khóa nhanh chóng, có một cảm biến vân tay được đặt khéo léo ở phía sau để dễ dàng truy cập, đây chỉ là một trong nhiều chi tiết đáng chú ý khiến ZenFone Max Pro trở nên bình thường. Và để phù hợp với phong cách độc đáo của mình, bạn có hai lựa chọn hoàn thiện tuyệt đẹp: Đen Deepsea và Bạc sao băng.</p>
+                </div>
+                <div class="space"></div>
+                <div class="txt-cont">
+                    <p class="head-1 text-center h3">
+                        <span><i class="fas fa-camera-retro"></i></span> Camera kép
+                    </p>
+                    <h1 class="text-center head-2">Ghi lại những khoảnh khắc chân thực</h1>
+                    <p class="head-3">ZenFone Max Pro có hệ thống camera kép tiên tiến sẽ nâng khả năng chụp ảnh trên di động của bạn lên một tầm cao mới. Máy ảnh phía sau tập trung vào đối tượng trong thời gian chưa đến chớp mắt và có cảm biến độ phân giải cao với ống kính khẩu độ rộng chất lượng cao giúp chụp ảnh rõ nét hơn mọi lúc. ZenFone Max Pro quay video ở độ phân giải lên đến 4K UHD - chất lượng gấp bốn lần Full HD! Không có gì phức tạp để bạn làm: chỉ cần ngắm, chụp và chia sẻ những kỷ niệm của bạn, tất cả đều được ghi lại với mức độ chi tiết đáng kinh ngạc.</p>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="big">16</span><span class="small">MP</span></h1>
+                            <p class="head-3 p-0">Camera chính phía sau lên đến 16MP</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="small">F</span><span class="big">2.0</span></h1>
+                            <p class="head-3 p-0">Khẩu độ lên đến F2.0</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="big">4</span><span class="small">K</span></h1>
+                            <p class="head-3 p-0">Quay video UHD</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h1 class="head-bg"><span class="big"><i class="fas fa-portrait"></i></span></h1>
+                            <p class="head-3 p-0">Máy ảnh thứ hai cho chế độ Chân dung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="text-center my-4">
+                <button class="trans-btn-dark" onclick="window.open('cartdemo.html')">Mua ngay</button>
+                <button class="trans-btn-dark" onclick="window.open('product-detail.php?id=zfmp1')">Trang sản phẩm</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5 p-4">
+        <section class="row">
+            <div class="col-sm-3">
+                <p class="font-weight-bold" style="color: #fff;">
+                    Taptap.com
+                </p>
+                <p>
+                    TapTap.com là nhà phân phối lẻ các sản phẩm smartphone chính hãng, giá rẻ và ưu đãi đến người dùng. Chúng tôi luôn ưu tiên trải nghiểm của khách hàng lên hàng đầu. Mọi thắc mắc xin liên hệ chúng tôi qua email <a class="font-weight-bold" href="mailto:taptapstore@gmail.com.vn">taptapstore@gmail.com.vn</a> <br>
+                    Chúc các bản có trải nghiệm tốt!
+                </p>
+                <div class="social-contact">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p class="bold">Tìm cửa hàng</p>
+                <p><a href="#">Hà Nội</a></p>
+                <p><a href="#">Đà Nẵng</a></p>
+                <p><a href="#">Tp. Hồ Chí Minh</a></p>
+                <p><a href="#">Mua Hàng Từ Xa</a></p>
+                <div class="pay-method">
+                    <p>Phương thức thanh toán</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-atm.jpg" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/metheod-momo.png" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-visa.jpg" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-paypal.png" alt="atm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Gọi mua hàng: <span class="font-weight-bold text-danger">987654321</span> (8h00 - 22h00) </p>
+                <p>Gọi khiếu nại: <span class="font-weight-bold text-danger">987654321</span> (8h00 - 21h00) </p>
+                <p>Gọi bảo hành: <span class="font-weight-bold text-danger">987654321</span> (8h00-22h00) </p>
+                <div class="contact-form">
+                    <p>Đăng ký nhận tin khuyến mại</p>
+                    <form action="#" class="form-inline">
+                        <input class="input-group" type="email" placeholder="Email">
+                        <input class="btn-primary" type="submit" value="Đăng ký">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <a href="#">Mua hàng online</a>
+                </p>
+                <p><a href="#">Mua trả góp</a></p>
+                <p><a href="#">Tra thông tin bảo hành</a></p>
+                <p><a href="#">Chính sách sử dụng</a></p>
+                <p><a href="#">Chính sách bảo hành</a></p>
+            </div>
+        </section>
+    </footer>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!--Script-->
+    <script src="script/hint.js"></script>
+</body>
+</html>

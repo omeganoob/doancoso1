@@ -1,0 +1,30 @@
+@import "header.css";
+
+.viewed div {
+    max-height: 170px;
+}
+.history-img {
+    padding: .5em;
+}
+.history-detail {
+    flex-direction: column;
+    justify-content: center;
+    padding: .5em;
+}
+.viewed:hover {
+    background-color: var(--silver);
+}
+.history-options {
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+}
+.history-options button {
+    padding: .2em;
+    border: 1px solid #777;
+    margin: .3em 0;
+}
+.history-options button:hover {
+    background-color: var(--green);
+    color: #fff;
+}

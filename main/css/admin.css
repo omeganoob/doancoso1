@@ -1,0 +1,52 @@
+@import "header.css";
+body {
+    overflow-x: hidden;
+}
+.sticky + main {
+    padding-top: 60px;
+  }
+.sticky {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+#sticknav {
+    overflow: hidden;
+    background: #34495e;
+}
+#sticknav a {
+    display: inline-block;
+    padding: 1em;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+#sticknav a:hover {
+    background: #fff;
+    color: #34495e
+}
+#sticknav a.active {
+    color: #fff;
+    background: var(--green);
+}
+.top-bar {
+    background: #34495e;
+    padding: 1em;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.admin-logout {
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.admin-logout a {
+    color: #7f8c8d;
+    transition: .2s;
+}
+.admin-logout a:hover {
+    color: #fff;
+}

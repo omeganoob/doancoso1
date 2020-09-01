@@ -1,0 +1,88 @@
+@import "header.css";
+.cart-container {
+    border: 1px solid #777;
+}
+.cart-container .row {
+    max-width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+.stock-check {
+    color: var(--blue);
+}
+.product-quantity input[type="number"] {
+    width: 50%;
+    margin: auto;
+}
+.product-quantity, .total-price {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.total-price {
+    color: rgba(0, 0, 0, .8);
+}
+.delete-item {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.delete-item .delete-item-btn {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.delete-item .delete-item-btn:hover {
+    color: var(--red);
+}
+.Update-cart {
+    align-items: center;
+}
+.Update-cart a {
+    font-size: 20px;
+    color: rgba(0, 0, 0, .8);
+    margin: 0 .8em;
+}
+.Update-cart a:hover {
+    color: var(--green);
+}
+.Update-cart button {
+    background-color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .8);
+    padding: .5em 1em;
+    transition: 0.3s;
+}
+.Update-cart button:focus {
+    outline: none;
+}
+.Update-cart button:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+}
+.Update-cart button:active {
+    transform: scale(0.9);
+}
+.cart-check-out textarea {
+    resize: vertical;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .9);
+    letter-spacing: 1px;
+    padding: .5em;
+    width: 60%;
+}
+#total-price {
+    color: var(--yellow);
+}
+.check-out {
+    padding: .5em 2em;
+    border: none;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+}
+.customer-info {
+    width: 70%;
+    margin: auto;
+}

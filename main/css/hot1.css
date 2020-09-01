@@ -1,0 +1,78 @@
+@import 'header.css';
+
+.content-cont h3 {
+    color: #f39c12;
+}
+main {
+    background: url('../image/bg-1.jpg');
+}
+.space-sm {
+    height: 100px;
+}
+.space {
+    height: 150px;
+}
+.content-layout {
+    padding: 4em;
+    background: #fff;
+}
+.head-1 {
+    letter-spacing: 1px;
+    color: #f39c12;
+}
+.head-1 span {
+    font-size: 12   0%;
+}
+.head-2 {
+    font-weight: 400;
+}
+.head-3 {
+    padding: 1em;
+    letter-spacing: 1px;
+    font-weight: 370;
+    text-align: center;
+    font-size: 1.3em;
+}
+.head-bg {
+    text-align: center;
+}
+.head-bg .big, .head-bg .small {
+    color: #f39c12;
+}
+.head-bg .big {
+    font-size: 1.4em;
+}
+.head-bg .small {
+    font-size: 0.7em;
+}
+.trans-btn, .trans-btn-dark {
+    outline: none;
+    border: 3px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:0.5em 2em;
+    background: none;
+    transition: 0.3s;
+}
+.trans-btn-dark {
+    padding: 1em 3em;
+    font-size: larger;
+    font-weight: bold;
+    border: 3px solid #222;
+    color: #222;
+}
+.trans-btn-dark:hover {
+    color: #f39c12;
+    background: #000;
+}
+.hot-price {
+    font-size: 40px;
+    text-align: center;
+    color: var(--yellow);
+    letter-spacing: 1px;
+}
+.trans-btn:hover {
+    background: #fff;
+    color: #000;
+}

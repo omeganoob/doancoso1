@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapTap.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f3e2743ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/product2.css">
+</head>
+<body>
+    
+    <header style="overflow-x: hidden;">
+        <div class="my-nav">
+            <nav class="container navbar navbar-expand-sm fixed-top">
+                <a class="navbar-brand" href="#">
+                    <h1>TapTap</h1>
+                </a>
+                <form autocomplete="off" class="form-inline" id="searchProduct" action="search-result.php" method="POST">
+                    <div class="auto-hint">
+                        <input id="searchInput" name="product-name" class="form-control mr-sm-2" type="text" placeholder="Tìm gì đó..">
+                    </div>
+                    <input id="btnSearch" class="btn btn-success" type="submit" value="Tìm">
+                </form>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapseNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cartdemo.html">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-history.html">Lịch sử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="large-brand">
+            <div class="row justify-content-around">
+                <div class="col-md-5">
+                    <div class="logo">
+                        <a href="home.html"><img src="logo.png" alt="taptap.com"></a>
+                    </div>
+                </div>
+                <div class="col-md-5" style="position: relative;">
+                    <div class="cart">
+                        <a href="cartdemo.html">Giỏ hàng - <span id="productCount">3</span> Sản phảm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-nav-lg">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">trang chủ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="product.html">sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartdemo.html">giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hot-product.html">hot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">danh mục</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <section class="row mt-5">
+                <div class="col-md-12">
+                    <div class="brand-slide">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="brand-logo">
+                                    <a href="#">
+                                        <img class="fit-img" src="image/brand-nokia.jpg" alt="nokia">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="brand-logo">
+                                    <a href="#">
+                                        <img class="fit-img" src="image/brand-xiaomi.png" alt="xiaomi">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="brand-logo">
+                                    <a href="#">
+                                        <img class="fit-img" src="image/samsung-brand.jpg" alt="samsung">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="brand-logo">
+                                    <a href="#">
+                                        <img class="fit-img" src="image/brand-oppo.jpg" alt="oppo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="brand-logo">
+                                    <a href="#">
+                                        <img class="fit-img" src="image/brand-realme.png" alt="realme">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="brand-logo">
+                                    <a href="#">
+                                        <img class="fit-img" src="image/brand-huawei.png" alt="huawei">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <h1>Nổi bật</h1>
+            <section class="row mt-5">
+                <div class="col-sm-5">
+                    <div class="special-product">
+                        <div class="special-img">
+                            <a href="product-detail.php?id=zfmp1">
+                                <img class="fit-img" src="product-img/asus-zenfone-max-pro-m1.jpg" alt="">
+                            </a>
+                            <div class="special-feature">
+                                <p><span><i class="fas fa-hand-sparkles"></i></span> Màn hình 6" 3.5D</p>
+                                <p><span><i class="fas fa-hand-sparkles"></i></span> Camera 13 MP</p>
+                                <p><span><i class="fas fa-hand-sparkles"></i></span> Ram 3GB, Rom 16GB</p>
+                                <p><span><i class="fas fa-hand-sparkles"></i></span> Android 8.1</p>
+                                <p><span><i class="fas fa-hand-sparkles"></i></span> Vân tay</p>
+                            </div>
+                        </div>
+                        <div class="special-text">
+                            <h3>Zenfone Max Pro m1</h3>
+                            <p class="bold text-primary text-center">
+                                5.900.000 đ
+                            </p>
+                            <p class="special-deal">
+                               Giảm tối đa <span style="color: red">30%</span>, kèm quà tặng hấp dẫn khi mua hàng tại taptap.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="product-info d-flex flex-column">
+                                    <div class="">
+                                        <a href="product-detail.php?id=rme2p"><img class="fit-img" src="product-img/realme-2-pro.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info-txt">
+                                        <p><a href="product-detail.php?id=rme2p">Realme 2 pro</a></p>
+                                        <p class="product-rate">
+                                            <span>★★★★★</span>
+                                        </p>
+                                        <p class="product-price">
+                                            <span>5.200.000đ</span> <span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-info d-flex flex-column">
+                                    <div class="">
+                                        <a href="product-detail.php?id=zfmp2"><img class="fit-img" src="product-img/asus-zenfone-max-pro-m2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info-txt">
+                                        <p><a href="product-detail.php?id=zfmp2">Zenfone MAX Pro m2</a></p>
+                                        <p class="product-rate">
+                                            <span>★★★★★</span>
+                                        </p>
+                                        <p class="product-price">
+                                            <span>6.900.000đ</span> <span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-info d-flex flex-column">
+                                    <div class="">
+                                        <a href="product-detail.php?id=sgn10p"><img class="fit-img" src="product-img/galaxy-note-10-plus.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info-txt">
+                                        <p><a href="product-detail.php?id=sgn10p">Galaxy Note 10 Plus</a></p>
+                                        <p class="product-rate">
+                                            <span>★★★★★</span>
+                                        </p>
+                                        <p class="product-price">
+                                            <span>17.000.000đ</span> <span>26.000.000</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-info d-flex flex-column">
+                                    <div class="">
+                                        <a href="product-detail.php?id=opoa520"><img class="fit-img" src="product-img/oppo-a5-2020.png" alt=""></a>
+                                    </div>
+                                    <div class="product-info-txt">
+                                        <p><a href="product-detail.php?id=opoa520">Oppo A5 2020</a></p>
+                                        <p class="product-rate">
+                                            <span>★★★★★</span>
+                                        </p>
+                                        <p class="product-price">
+                                            <span>4.490.000đ</span> <span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-info d-flex flex-column">
+                                    <div class="">
+                                        <a href="product-detail.php?id=mixaomn10l"><img class="fit-img" src="product-img/xiaomi-mi-note-10-lite.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info-txt">
+                                        <p><a href="product-detail.php?id=mixaomn10l">Xiaomi mi note 10 lite</a></p>
+                                        <p class="product-rate">
+                                            <span>★★★★★</span>
+                                        </p>
+                                        <p class="product-price">
+                                            <span>9.900.000đ</span> <span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="product-info d-flex flex-column">
+                                    <div class="">
+                                        <a href="product-detail.php?id=ip11p"><img class="fit-img" src="product-img/iphone-11-pro.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info-txt">
+                                        <p><a href="product-detail.php?id=ip11p">Iphone 11 Pro</a></p>
+                                        <p class="product-rate">
+                                            <span>★★★★★</span>
+                                        </p>
+                                        <p class="product-price">
+                                            <span>26.000.000đ</span> <span>30.000.000</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="mt-5">
+            <h1 class="mt-3">Tất cả sản phẩm</h1>
+            <section class="row mt-5" id="product-field">
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=sgn10p">
+                            <img class="fit-img" src="product-img/samsung-galaxy-note10-lite.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=sgn10p">Samsung galaxy note 10 lite</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">17.000.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=zfmp1">
+                            <img class="fit-img" src="product-img/asus-zenfone-max-pro-m1.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=zfmp1">Zenfone max pro m1</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">5.900.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=zfmp2">
+                            <img class="fit-img" src="product-img/asus-zenfone-max-pro-m2.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=zfmp2">Zenfone max pro m2</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">6.900.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=opoa520">
+                            <img class="fit-img" src="product-img/oppo-a5-2020.png" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=opoa520">OPPO A5 2020</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">5.900.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=bpb86">
+                            <img class="fit-img" src="product-img/bphone-b86.png" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=bpb86">Bphone B86</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">12.000.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=opoa920">
+                            <img class="fit-img" src="product-img/oppo-a9-2020.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=opoa920">OPPO A9 2020</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">5.500.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=rme2p">
+                            <img class="fit-img" src="product-img/realme-2-pro.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=rme2p">Realme 2 pro</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">5.200.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=hwn3i">
+                            <img class="fit-img" src="product-img/huawei-nova-3i.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=hwn3i">Huawei Nova 3i</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">7.000.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center mt-3">
+                <button class="btn btn-outline-danger px-5 py-2" id="expander">Xem thêm</button>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer class="mt-5 p-4">
+        <section class="row">
+            <div class="col-sm-3">
+                <p class="font-weight-bold" style="color: #fff;">
+                    Taptap.com
+                </p>
+                <p>
+                    TapTap.com là nhà phân phối lẻ các sản phẩm smartphone chính hãng, giá rẻ và ưu đãi đến người dùng. Chúng tôi luôn ưu tiên trải nghiểm của khách hàng lên hàng đầu. Mọi thắc mắc xin liên hệ chúng tôi qua email <a class="font-weight-bold" href="mailto:taptapstore@gmail.com.vn">taptapstore@gmail.com.vn</a> <br>
+                    Chúc các bản có trải nghiệm tốt!
+                </p>
+                <div class="social-contact">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p class="bold">Tìm cửa hàng</p>
+                <p><a href="#">Hà Nội</a></p>
+                <p><a href="#">Đà Nẵng</a></p>
+                <p><a href="#">Tp. Hồ Chí Minh</a></p>
+                <p><a href="#">Mua Hàng Từ Xa</a></p>
+                <div class="pay-method">
+                    <p>Phương thức thanh toán</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-atm.jpg" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/metheod-momo.png" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-visa.jpg" alt="atm">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="pay-method-icon">
+                                    <img class="fit-img" src="image/method-paypal.png" alt="atm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>Gọi mua hàng: <span class="font-weight-bold text-danger">987654321</span> (8h00 - 22h00) </p>
+                <p>Gọi khiếu nại: <span class="font-weight-bold text-danger">987654321</span> (8h00 - 21h00) </p>
+                <p>Gọi bảo hành: <span class="font-weight-bold text-danger">987654321</span> (8h00-22h00) </p>
+                <div class="contact-form">
+                    <p>Đăng ký nhận tin khuyến mại</p>
+                    <form action="#" class="form-inline">
+                        <input class="input-group" type="email" placeholder="Email">
+                        <input class="btn-primary" type="submit" value="Đăng ký">
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <a href="#">Mua hàng online</a>
+                </p>
+                <p><a href="#">Mua trả góp</a></p>
+                <p><a href="#">Tra thông tin bảo hành</a></p>
+                <p><a href="#">Chính sách sử dụng</a></p>
+                <p><a href="#">Chính sách bảo hành</a></p>
+            </div>
+        </section>
+    </footer>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!--Script-->
+    <script src="script/hint.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#expander').click(function() {
+                $.ajax({
+                    url: "product-expand.txt",
+                    success: function(result) {
+                        $('#product-field').append(result);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+    })
+    </script>
+</body>
+</html>

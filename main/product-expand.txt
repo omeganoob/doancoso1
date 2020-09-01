@@ -1,0 +1,84 @@
+<div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=sgn10p">
+                            <img class="fit-img" src="product-img/samsung-galaxy-note10-lite.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=sgn10p">Samsung galaxy note 10 lite</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">17.000.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=zfmp1">
+                            <img class="fit-img" src="product-img/asus-zenfone-max-pro-m1.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=zfmp1">Zenfone max pro m1</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">5.900.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=zfmp2">
+                            <img class="fit-img" src="product-img/asus-zenfone-max-pro-m2.jpg" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=zfmp2">Zenfone max pro m2</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">6.900.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card-detail">
+                        <div class="card-top">
+                            <div class="detail">
+                                <p>Màn hình: 6.8", 2k+</p>
+                                <p>Hệ điều hành: Android 9.0</p>
+                                <p>Camera sau: Chính 12 MP & Phụ 12 MP, 16 MP</p>
+                                <p>Camara trước: 10 MP</p>
+                                <p>Pin: Sạc nhanh, 4300 mAh</p>
+                            </div>
+                           <a href="product-detail.php?id=opoa520">
+                            <img class="fit-img" src="product-img/oppo-a5-2020.png" alt="">
+                           </a>
+                        </div>
+                        <div class="card-bot">
+                            <p class="text-center"><a href="product-detail.php?id=opoa520">OPPO A5 2020</a></p>
+                            <p class="product-rate"><span>★★★★★</span></p>
+                            <p class="product-price">5.900.000</p>
+                        </div>
+                    </div>
+                </div>
